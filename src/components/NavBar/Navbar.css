@@ -129,6 +129,18 @@
     margin: 0 40px 0 15px;
     background-position: center;
   }
+  .form-inline.search-bar {
+      position: relative;
+  }
+  .search-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    padding: 5px 20px;
+    outline: none;
+     
+  }
   
   .navbar-brand {
     display: flex;

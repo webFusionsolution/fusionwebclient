@@ -24,7 +24,8 @@ const Navbar =()=>{
         <div
           className="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center mt-3"
         >
-          <form className="form-inline mb-3 mb-lg-0 ">
+          <form className="form-inline mb-3 mb-lg-0 search-bar">
+            <input type="text" className='search-input' placeholder="Search"/>
             <button
               className="btn  my-sm-0 nav_search-btn"
               type="submit"
