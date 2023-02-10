@@ -1,0 +1,49 @@
+.who_section {
+    background-color: #2801b9;
+  }
+  
+  .who_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .who_section {
+    color: #fff;
+  }
+  
+  .who_section .who_img-box {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 50px;
+    transform: scale(1.01) translateX(-10%);
+    overflow: hidden;
+    width: 60%;
+  }
+  
+  .who_img-box img {
+    width: 100%;
+  }
+  
+  .who_section .who_deail-box {
+    text-align: right;
+    width: 40%;
+  }
+  
+  .who_section .who_deail-box p {
+    margin: 45px 0 50px 0;
+  }
+  
+  .who_section .who_deail-box a {
+    display: inline-block;
+    background-color: #c6820f;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 12px 32px;
+  }
+  
+  .who_container {
+    display: flex;
+  }

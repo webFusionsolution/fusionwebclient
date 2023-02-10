@@ -1,0 +1,6 @@
+.hero_area {
+  background-color: #2801b9;
+  background-image: url('../../../public/assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

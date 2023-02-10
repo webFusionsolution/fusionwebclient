@@ -1,0 +1,34 @@
+.feature_img-container {
+  background-color: #1ba1b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.feature_img-box {
+  width: 100px;
+}
+.feature_card {
+  width: 300px;
+  padding: 0 15px;
+  margin: 35px 0;
+}
+
+.feature_card h5 {
+  text-transform: uppercase;
+}
+
+.feature_card img {
+  width: 100%;
+}
+
+.feature_detail-box {
+  margin: 35px auto 0 auto;
+}
+
+.feature_detail-box h4 {
+  font-weight: 600;
+  font-size: 20px;
+}

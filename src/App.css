@@ -1,0 +1,43 @@
+body {
+    font-family: "Raleway", sans-serif;
+    color: #1b161d;
+    background-color: #ffffff;
+  }
+  
+  .body-bg {
+    /* background-image: url(../public/assets/body-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #ffffff;
+  }
+  
+  .container-box {
+    width: 100%;
+  }
+
+  .layout_padding {
+    padding: 75px 0;
+  }
+  
+  .layout_padding2 {
+    padding: 45px 0;
+  }
+  
+  .layout_padding2-top {
+    padding-top: 45px;
+  }
+  
+  .layout_padding2-bottom {
+    padding-bottom: 45px;
+  }
+  
+  .layout_padding-top {
+    padding-top: 75px;
+  }
+  
+  .layout_padding-bottom {
+    padding-bottom: 75px;
+  }
+
+
+ 

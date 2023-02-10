@@ -1,0 +1,107 @@
+.slider_item-box {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .slider_item-box .container {
+    height: 100%;
+  }
+  
+  .slider_img-box {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .slider_img-box img {
+    width: 100%;
+  }
+  
+  .slider_item-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider_item-detail {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .slider_item-detail h1 {
+    font-weight: 600;
+  }
+  
+  .slider_item-detail p {
+    margin: 40px 0 45px 0;
+  }
+  
+  .slider_item-detail a {
+    display: inline-block;
+    background-color: #c6820f;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 40px;
+  }
+  
+  .slider_item-imgbox {
+    margin-top: 45px;
+    width: 75%;
+  }
+  
+  .slider_item-imgbox img {
+    width: 100%;
+  }
+  
+  .slider_section #carouselExampleControls,
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+  
+  .slider_section .carousel-control-prev,
+  .slider_section .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center;
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+  
+  .slider_section .carousel-control-prev:hover,
+  .slider_section .carousel-control-next:hover {
+    background-color: #292727;
+    background-size: 12px;
+  }
+  
+  .slider_section .carousel-control-prev {
+    left: 2%;
+    /* background-image: url(../images/left-black-arrow.png); */
+    background-image: url(../../../public/assets/left-black-arrow.png);
+  }
+  
+  .slider_section .carousel-control-next {
+    right: 2%;
+    /* background-image: url(../images/right-black-arrow.png); */
+    background-image: url(../../../public/assets/right-black-arrow.png);
+  }
+  
+  .slider_section .carousel-control-prev:hover {
+    /* background-image: url(../images/prev.png); */
+    background-image: url(../../../public/assets/prev.png);
+  }
+  
+  .slider_section .carousel-control-next:hover {
+    /* background-image: url(../images/next.png); */
+    background-image: url(../../../public/assets/next.png);
+  }

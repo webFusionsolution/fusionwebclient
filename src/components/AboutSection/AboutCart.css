@@ -1,0 +1,36 @@
+.about_section h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.about_card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about_card .about-detail {
+  padding: 2px 25px 35px 25px;
+}
+
+.about_img-container {
+  width: 225px;
+  background-color: #1ba1b9;
+  height: 225px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 25px solid #d7daf4;
+  margin: 0 auto 45px auto;
+}
+
+.about_card .about_img-box {
+  width: 75px;
+}
+
+.about_card .about-detail p {
+  margin-top: 15px;
+}
+
+.about_card img {
+  width: 100%;
+}

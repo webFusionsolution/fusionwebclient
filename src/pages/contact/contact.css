@@ -1,0 +1,32 @@
+label{
+    display: flex;
+}
+input{
+    display: block;
+}
+.contact_us{
+    display: block;
+    padding-left: 13%;
+   
+    
+}
+form{
+   /* background-image: url(../../../public/assets/bkgrnd.jpg);; */
+    margin: auto;
+}
+#btn{
+    background: #b3d7ff;
+    border: solid 1px grey
+}
+#btn:hover{
+    background: rgb(167, 167, 216);
+}
+
+.row{
+    display:flex;
+   
+}
+
+.row img{
+    width:50%;
+}

@@ -1,0 +1,17 @@
+.social-box {
+    display: flex;
+    justify-content: right;
+ }
+ .social-box a {
+   font-size: 20px;
+   padding-left: 10px;
+   color: #ddd;
+ }
+ 
+ .top-bar a {
+     color: #ddd;
+    font-size: 14px;
+ }
+ .top-bar a:hover {
+   color: #fff;
+ }

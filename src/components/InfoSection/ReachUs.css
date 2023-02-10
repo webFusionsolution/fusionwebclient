@@ -1,0 +1,25 @@
+.info_section {
+    position: relative;
+    background-color: #161616;
+    font-family: "Poppins", sans-serif;
+    
+  }
+.info_section ul {
+    padding: 0;
+  }
+  
+  .info_section ul li {
+    list-style-type: none;
+    margin: 10px 0;
+  }
+  
+  .info_section ul li a,
+  .info_section ul li a:hover {
+    color: #fff;
+  }
+  .info_section h5 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #fff;
+    border-bottom: 2px solid #c6820f;
+  }

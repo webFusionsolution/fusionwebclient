@@ -1,0 +1,13 @@
+.header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .header_section .nav_container {
+    margin: 0 auto;
+  }
+  .header_section{
+    background-color: #2801b9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

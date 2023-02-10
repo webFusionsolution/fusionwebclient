@@ -1,0 +1,9 @@
+.feature_section {
+    text-align: center;
+  }
+  .feature_card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
