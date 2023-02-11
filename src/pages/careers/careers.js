@@ -36,7 +36,7 @@ const Careers = () => {
       <p>Recognition rewards</p>
       <p>Annual leave</p>
       <p>Priority Pass for travel</p>
-      <p>We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity we will give your application fair consideration.
+      <p>We are proud to foster a wmorkplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity we will give your application fair consideration.
       </p>
 
     </div>

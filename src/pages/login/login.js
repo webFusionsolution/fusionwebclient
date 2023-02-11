@@ -3,6 +3,7 @@ import React from "react";
 import "./login.css";
 
 const Login = () => {
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
   const obj = {
     email: "",
     password: "",
@@ -113,8 +114,8 @@ const Login = () => {
   };
 
   const userInvalid = () => {
-    fetch('/auth/login', {
-      method: "POST",
+    fetch(BASE_URL+'/api/users/' + userDetails.email, {
+      method: "GET",
     })
       .then((res) => res.json()) // or res.json()
       .then((res) => {
@@ -201,7 +202,7 @@ const Login = () => {
     }
   };
   const checkExistingUser = (userRegisterDetail) => {
-    fetch("/api/users?email=" + userRegisterDetail.email, {
+    fetch(BASE_URL+"/api/users/" + userRegisterDetail.email, {
       method: "GET",
     })
       .then((res) => res.json()) // or res.json()
@@ -221,7 +222,7 @@ const Login = () => {
       email: userRegisterDetail.email,
       password: userRegisterDetail.password,
     };
-    fetch("/api/users", {
+    fetch(BASE_URL+"/api/users", {
       method: "post",
       headers: {
         Accept: "application/json",

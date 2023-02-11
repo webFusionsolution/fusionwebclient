@@ -92,9 +92,16 @@
   .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
+    width: 20%;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto;
+  }
+  .overlay-content a {
+    padding: 10px 0;
+    border-bottom: dashed 1px #fff;
+  }
+  .overlay-content a:last-child {
+     border-bottom: none;
   }
   
   .menu_width {
@@ -140,6 +147,9 @@
     padding: 5px 20px;
     outline: none;
      
+  }
+  .search-input:focus{
+    outline: solid 2px #fba905;
   }
   
   .navbar-brand {
