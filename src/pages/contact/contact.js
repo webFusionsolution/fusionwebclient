@@ -22,6 +22,7 @@ const Contact = () => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": BASE_URL
       },
       body: JSON.stringify(postObj),
     })
