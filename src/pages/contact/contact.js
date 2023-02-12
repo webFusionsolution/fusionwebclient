@@ -18,7 +18,7 @@ const Contact = () => {
   }
   const postSubmitData = (postObj) => {
     let headers = new Headers();
-    headers.append('Access-Control-Allow-Origin', '*');
+    headers.append('Access-Control-Allow-Origin', 'http://fusionweb.in');
     headers.append('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
     fetch(BASE_URL+'/api/users/contact', {
         mode: 'cors',
