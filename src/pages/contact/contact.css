@@ -6,10 +6,10 @@ input{
 }
 .contact_us{
     display: block;
-    padding-left: 13%;
-   
+    padding-left: 13%;  
     
 }
+.color-green {color: rgb(55, 138, 0);}
 form{
    /* background-image: url(../../../public/assets/bkgrnd.jpg);; */
     margin: auto;

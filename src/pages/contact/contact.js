@@ -4,9 +4,12 @@ import React from 'react'
 const Contact = () => {
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const [formStatus, setFormStatus] = React.useState('Send');
+  const [message, setMessage] = React.useState(false);
+  
   const onSubmit = (e) => {
     e.preventDefault()
-    setFormStatus('Submitting...')
+    setFormStatus('Submitting...');
+    setMessage(false);
     const { name, email, phone,  message } = e.target.elements
     let contactDetails = {
       name: name.value,
@@ -14,17 +17,31 @@ const Contact = () => {
       phone: phone.value,
       message: message.value,
     }
-    postSubmitData(contactDetails);
+    postSubmitData(e, contactDetails);
   }
-  const postSubmitData = (postObj) => {
-    fetch(BASE_URL+'/api/users/contact', {
+  const postSubmitData = async (e, postObj) => {
+    await fetch(BASE_URL+'/api/users/contact', { 
         method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify(postObj),
     })
       .then((res) => res.json()) // or res.json()
       .then((res) => {
+        if(res){
+          setFormStatus('Send');
+          e.target.elements.email.value = "";
+          e.target.elements.email.value = "";
+          e.target.elements.phone.value = "";
+          e.target.elements.message.value = "";
+          setMessage(true)
+        } else {
+          setMessage(false)
+        }
 
-    });
+     });
   }
   return (
     <div className="content-section">
@@ -36,6 +53,11 @@ const Contact = () => {
         <div className="col-6 mb-3">
           <form onSubmit={onSubmit}>
             <h3>Send Your Query</h3>
+            {message ?
+              <p className='color-green'><strong>Thank you for submitting your query! We will get back to you on the same.</strong></p>
+              : ''
+            }
+            
             <div className="mb-3">
               <label className="form-label" htmlFor="name">
                 Name

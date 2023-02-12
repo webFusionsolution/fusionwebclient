@@ -113,8 +113,8 @@ const Login = () => {
     }
   };
 
-  const userInvalid = () => {
-    fetch(BASE_URL+'/api/users/' + userDetails.email, {
+  const userInvalid = async () => {
+    await fetch(BASE_URL+'/api/users/' + userDetails.email, {
       method: "GET",
     })
       .then((res) => res.json()) // or res.json()
@@ -201,8 +201,8 @@ const Login = () => {
       //
     }
   };
-  const checkExistingUser = (userRegisterDetail) => {
-    fetch(BASE_URL+"/api/users/" + userRegisterDetail.email, {
+  const checkExistingUser = async (userRegisterDetail) => {
+    await fetch(BASE_URL+"/api/users/" + userRegisterDetail.email, {
       method: "GET",
     })
       .then((res) => res.json()) // or res.json()
@@ -216,13 +216,13 @@ const Login = () => {
       });
   };
 
-  const submitRegister = (userRegisterDetail) => {
+  const submitRegister = async (userRegisterDetail) => {
     const postObj = {
       username: userRegisterDetail.username,
       email: userRegisterDetail.email,
       password: userRegisterDetail.password,
     };
-    fetch(BASE_URL+"/api/users", {
+    await fetch(BASE_URL+"/api/users", {
       method: "post",
       headers: {
         Accept: "application/json",
