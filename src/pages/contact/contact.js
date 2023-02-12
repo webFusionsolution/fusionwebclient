@@ -30,7 +30,6 @@ const Contact = () => {
     })
       .then((res) => res.json()) // or res.json()
       .then((res) => {
-
     });
   }
   return (
