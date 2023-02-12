@@ -15,12 +15,12 @@ const Contact = () => {
       message: message.value,
     }
     postSubmitData(contactDetails);
-  }
+  }    
   const postSubmitData = (postObj) => {
     let headers = new Headers();
-    headers('Access-Control-Allow-Origin: *');
-    headers('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-    headers('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+    headers.append('Access-Control-Allow-Origin: *');
+    headers.append('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+    headers.append('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
     fetch(BASE_URL+'/api/users/contact', {
         mode: 'cors',
         credentials: 'include',
@@ -30,6 +30,7 @@ const Contact = () => {
     })
       .then((res) => res.json()) // or res.json()
       .then((res) => {
+
     });
   }
   return (
