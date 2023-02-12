@@ -18,9 +18,9 @@ const Contact = () => {
   }
   const postSubmitData = (postObj) => {
     let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-    headers.append('Origin', BASE_URL);
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
     fetch(BASE_URL+'/api/users/contact', {
         mode: 'cors',
         credentials: 'include',
