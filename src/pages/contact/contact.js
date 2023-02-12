@@ -19,7 +19,6 @@ const Contact = () => {
   const postSubmitData = (postObj) => {
     fetch(BASE_URL+'/api/users/contact', {
       method: "post",
-      mode: 'no-cors',
       body: JSON.stringify(postObj),
     })
       .then((res) => res.json()) // or res.json()
