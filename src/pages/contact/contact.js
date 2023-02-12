@@ -17,9 +17,16 @@ const Contact = () => {
     postSubmitData(contactDetails);
   }
   const postSubmitData = (postObj) => {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+    headers.append('Origin', BASE_URL);
     fetch(BASE_URL+'/api/users/contact', {
-      method: "post",
-      body: JSON.stringify(postObj),
+        mode: 'cors',
+        credentials: 'include',
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(postObj),
     })
       .then((res) => res.json()) // or res.json()
       .then((res) => {
