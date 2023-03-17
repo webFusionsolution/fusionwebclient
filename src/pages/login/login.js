@@ -129,7 +129,7 @@ const Login = () => {
           }
          
         } else{
-          setValidId("User Not Found")
+          setValidId("Seems like you are not register to out system. Please signup with us")
         }
 
       });
@@ -150,7 +150,7 @@ const Login = () => {
     setUserRegisterDetail(register);
   };
   const userDetailsUpdate = () => {
-    const mailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    const mailRegex = '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$';
 
     if (userRegisterDetail.username === "") {
       reg_error[0].visible = true;
@@ -264,8 +264,7 @@ const Login = () => {
                     Login to <strong>FusionWeb</strong>
                   </h3>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet elit. Sapiente sit aut eos
-                    consectetur adipisicing.
+                    Welcome to Fusion Web Solutions, Please login to unlock all features
                   </p>
                   <form>
                     <div className="form-group first">
@@ -353,8 +352,7 @@ const Login = () => {
                     Register to <strong>FusionWeb</strong>
                   </h3>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet elit. Sapiente sit aut eos
-                    consectetur adipisicing.
+                    Please Signup to out application to unlock the features
                   </p>
                   <form>
                     <div className="form-group first">
