@@ -20,6 +20,8 @@ import Login from "./pages/login/login";
 import Careers from "./pages/careers/careers";
 import Privacy from "./pages/privacy/privacy";
 import Terms from "./pages/terms/terms";
+import Testimonial from "./pages/testimonial/testimonials";
+
 
 
 
@@ -39,6 +41,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />}/>
         <Route path="/terms" element={<Terms />}/>
         <Route path="/login" element={<Login />} />
+        <Route path="/testimonials" element={ <Testimonial/>} />
     </Routes>
     <InfoSection />
       <Footer />
