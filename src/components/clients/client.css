@@ -6,8 +6,11 @@
     padding: 30px 0;
 }
 .client-container > div {
+    flex: 0 0 33.33%;
+    text-align: center;
+}
+.client-container > div img {
     width: 200px;
-    border: solid 1px red;
 }
 .client-section {
     margin: 60px 0 0;
