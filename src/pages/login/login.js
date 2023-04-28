@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const obj = {
     email: "",
@@ -323,9 +325,9 @@ const Login = () => {
                         <div className="control__indicator"></div>
                       </label>
                       <span className="ml-auto">
-                        <a href="#" className="forgot-pass">
-                          Forgot Password
-                        </a>
+                         <Link to={'/'}>
+                            Forgot Password
+                        </Link>
                       </span>
                     </div>
                     <button

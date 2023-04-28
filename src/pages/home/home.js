@@ -8,6 +8,7 @@ import Client from "../../components/clients/client";
 
 
 const Home = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   return (
     <>    
       <Hero />

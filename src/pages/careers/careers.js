@@ -2,6 +2,7 @@ import './careers.css';
 import React from "react";
 
 const Careers = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   return (
     <div className="content-section">
       <h2>Careers</h2>

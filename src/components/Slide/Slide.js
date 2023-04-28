@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Slide.css';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,9 +20,7 @@ const Slide =(props)=>{
                {slide.description}
               </p>
               <div>
-                <a href={slide.href}>
-                 {slide.linkBtn}
-                </a>
+                <Link  to={slide.href}>{slide.linkBtn}</Link>               
               </div>
             </div>
             <div className="slider_item-imgbox">           

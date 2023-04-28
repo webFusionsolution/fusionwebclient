@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Whosection.css';
 
 const WhoSection = () => {
@@ -17,9 +18,7 @@ const WhoSection = () => {
             We operate from Siliguri, West Bengal. We have an experienced team of designers and developers who are among the best in their related fields.  We don’t just want to build your website – we want to help build your business. We create high-quality websites and marketing to help your business thrive online.
           </p>
           <div>
-            <a href="/about">
-              Read More
-            </a>
+            <Link to={'/about'}>Read More</Link>            
           </div>
         </div>
       </div>

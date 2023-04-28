@@ -1,6 +1,7 @@
 import "./privacy.css";
 
 const Privacy = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   return (
     <div className="content-section">
       <p>This Privacy Policy applies to information that we collect and use about you when you access or use the Geeklurn Edutech Services Pvt Ltd. website. PLEASE READ THIS PRIVACY POLICY CAREFULLY TO UNDERSTAND HOW WE HANDLE YOUR INFORMATION. IF YOU DO NOT AGREE TO THIS PRIVACY POLICY, PLEASE DO NOT USE THE SERVICES.

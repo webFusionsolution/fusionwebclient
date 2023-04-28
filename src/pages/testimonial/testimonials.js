@@ -1,6 +1,7 @@
 import "./testimonial.css";
 import React from "react";
 const Testimonial = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
     return (
         <div className="testimonial-content">
             <h2>What Our Client Say</h2>

@@ -1,10 +1,11 @@
  import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ReachUs.css';
 
  const ReachUs =(props)=>{
    
     const [info, setInfo]= useState(props.props);
-   //console.log(info)
+    
       return(
         <div className="col-md-4">
             <div className="d-flex">
@@ -14,9 +15,8 @@ import './ReachUs.css';
               </div>
               <div className="d-flex ">
               <ul>
-              <li>
-              <a href="#"><i className="fa fa-home" aria-hidden="true">&nbsp;
-               
+              <li>             
+              <Link to={'/contact'}><i className="fa fa-home" aria-hidden="true">&nbsp;               
               </i>
               { info.home} <br />
                 {info.address} <br />
@@ -24,7 +24,7 @@ import './ReachUs.css';
                 {info.pincode} <br />
                 {info.call} <br />
                 {info.mail}
-                </a>
+                </Link>
               </li>
               </ul>
               </div>

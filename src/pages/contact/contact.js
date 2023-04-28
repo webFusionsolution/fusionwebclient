@@ -2,6 +2,7 @@ import './contact.css';
 import React from 'react'
 
 const Contact = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const [formStatus, setFormStatus] = React.useState('Send');
   const [message, setMessage] = React.useState(false);

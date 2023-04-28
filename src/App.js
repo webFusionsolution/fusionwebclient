@@ -43,7 +43,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/testimonials" element={ <Testimonial/>} />
     </Routes>
-    <InfoSection />
+      <InfoSection />
       <Footer />
     </div>
   );

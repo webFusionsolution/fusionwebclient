@@ -1,6 +1,7 @@
 import "./Services.css";
 import ReachUs from "./ReachUs";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Services = (props) => {
   const [quickLinks, setQuickLinks] = useState(props.props);
@@ -16,9 +17,7 @@ const Services = (props) => {
         <ul>
           {quickLinkService.map((item) => (
             <li key={item.name}>
-              <a href={item.link}>
-                {item.name}
-              </a>
+              <Link to={item.link}>  {item.name}</Link>
             </li>
           ))}
         </ul>

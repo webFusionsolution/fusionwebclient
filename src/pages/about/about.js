@@ -1,6 +1,7 @@
 import './about.css';
 
 const About =()=>{
+   window.scrollTo({top: 0, behavior: 'smooth'});
    return(
     <div className='content-section'>
     <h2>About Us</h2>

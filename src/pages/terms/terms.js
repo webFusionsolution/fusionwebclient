@@ -1,6 +1,7 @@
 import "./terms.css";
 
 const Terms = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   return (
     <div className="content-section">
       <h2>Terms & Condition</h2>
