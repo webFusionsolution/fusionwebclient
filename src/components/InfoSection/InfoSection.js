@@ -15,7 +15,7 @@ const InfoSection =()=>{
             location: "Siliguri,West Bengal",
             pincode: "Pincode - 734001",
             call: "+91 79086 20026",
-            mail:"support@fusionweb.in"
+            mail:"support@fusionwebsolutions.in"
         },
         {
             id:2,

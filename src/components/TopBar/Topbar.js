@@ -6,13 +6,13 @@ const Topbar = () => {
   return (
     <div className="top-bar">
       <div className="cols">
-        <a href="mailto:support@fusionweb.in.net">
+        <a href="mailto:support@fusionwebsolutions.in">
           {" "}
           <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
-          support@fusionweb.in.net
+          support@fusionwebsolutions.in
         </a>{" "}
         |
-        <a href="tel:+917908620026">
+        <a href="tel:+919289441026">
           {" "}
           <i className="fa fa-phone" aria-hidden="true"></i> +91 92894 41026
         </a>
