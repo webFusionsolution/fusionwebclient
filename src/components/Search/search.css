@@ -1,0 +1,32 @@
+.search-panel {
+    width: 300px;
+    min-height: 50px;
+    max-height: 250px;
+    border: solid 1px #ddd;
+    position: absolute;
+    top: 40px;
+    background: #fff;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+.search-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.search-panel ul li {
+    list-style: none;
+    padding: 10px 5px;
+    border-bottom: solid 1px #ddd;
+    cursor: pointer;
+}
+.search-panel ul li:hover {
+    background-color: #fafafa;
+    text-decoration: underline;
+}
+.search-panel ul li:last-child {
+    border-bottom: none;
+}
+.search-panel ul li a {
+     color: #333;
+}

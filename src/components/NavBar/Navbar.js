@@ -1,3 +1,4 @@
+import Search from '../Search/search';
 import './Navbar.css';
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ const Navbar =()=>{
     document
       .querySelector(".custom_menu-btn")
       .classList.toggle("menu_btn-style");
-  }
+   }
 
 
      return(
@@ -25,11 +26,7 @@ const Navbar =()=>{
           className="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center mt-3"
         >
           <form className="form-inline mb-3 mb-lg-0 search-bar">
-            <input type="text" className='search-input' placeholder="Search"/>
-            <button
-              className="btn  my-sm-0 nav_search-btn"
-              type="submit"
-            ></button>
+             <Search/>
           </form>
           <ul className="navbar-nav  mr-5">
             <li className="nav-item mr-5">

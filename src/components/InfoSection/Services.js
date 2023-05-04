@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Services = (props) => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
   const [quickLinks, setQuickLinks] = useState(props.props);
   //console.log(quickLinks.links)
   const [quickLinkService, setQuickLinkService] = useState(quickLinks.links);
